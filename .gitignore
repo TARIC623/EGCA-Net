@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Training artefacts and checkpoints
+runs/
+weights/
+*.pt
+*.onnx
+*.engine
+
+# Datasets and caches
+datasets/
+data/
+*.cache
+
+# Editors and operating system files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db

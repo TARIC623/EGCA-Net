@@ -1,0 +1,7 @@
+# Update `path` to the directory containing your YOLO-format SSDD dataset.
+path: /absolute/path/to/ssdd_yolo
+train: images/train
+val: images/val
+
+names:
+  0: ship
