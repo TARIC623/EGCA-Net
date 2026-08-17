@@ -5,7 +5,6 @@ This repository contains the public, minimal implementation of **EGCA-Net**, a Y
 - **ESFF**: entropy-inspired frequency-statistics fusion. A local low/high-frequency split is combined with regional high-frequency mean and standard-deviation gating.
 - **DS-SCR**: dual-scale spatial-coherence rectification. A large-kernel depthwise context path and a local smoothing path are fused with parameter-free SimAM refinement.
 
-The repository deliberately excludes datasets, trained weights, private experiment logs, and manuscript material.
 
 ## Environment
 
@@ -31,7 +30,7 @@ Convert SSDD to standard YOLO detection format and create a dataset YAML from [c
 python scripts/train.py --data /path/to/data_ssdd.yaml --model configs/egca_net.yaml
 ```
 
-The supplied script uses the paper-facing setup: 200 epochs, input size 640, batch size 32, SGD, seed 0, `close_mosaic=15`, `mosaic=0.08`, and `mixup=0.09`.
+The supplied script uses the paper-facing setup: 200 epochs, input size 640, batch size 32, SGD, seed 0.
 
 ## Evaluation
 
